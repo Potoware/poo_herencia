@@ -3,6 +3,8 @@ import com.potoware.pooherencia.*;
 
 public class EjemploHerencia {
     public static void main(String[] args) {
+
+        System.out.println("==========ALUMNO==============");
         Alumno alumno = new Alumno();
         alumno.setNombre("Alejandro");
         alumno.setApellido("Potosi");
@@ -11,6 +13,7 @@ public class EjemploHerencia {
         alumno.setNotaHistoria(5.2);
         alumno.setNotaMatematicas(2.1);
 
+        System.out.println("==========ALUMNO INTERNACIONAL==============");
         AlumnoInternacional alumnoInternacional = new AlumnoInternacional();
         alumnoInternacional.setNombre("Peter");
         alumnoInternacional.setApellido("Parker");
@@ -22,7 +25,7 @@ public class EjemploHerencia {
         alumnoInternacional.setNotaMatematicas(5.3);
         alumnoInternacional.setNotaHistoria(5.4);
 
-
+        System.out.println("==========PROFESOR==============");
         Profesor profesor = new Profesor();
         profesor.setNombre("Juan");
         profesor.setApellido("Robenzo");
@@ -35,6 +38,7 @@ public class EjemploHerencia {
 
         System.out.println("alumno = " + ((Alumno) alumno).getInstitucion());
 
+        System.out.println("============================");
         System.out.println(alumnoInternacional.getNombre()+" "+alumnoInternacional.getApellido());
         System.out.println("Pais = " + alumnoInternacional.getPais());
         Class clase = alumnoInternacional.getClass();

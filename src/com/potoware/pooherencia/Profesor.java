@@ -3,6 +3,21 @@ package com.potoware.pooherencia;
 public class Profesor extends Persona{
     private String asignatura;
 
+    public Profesor() {
+        System.out.println("Inicializando Constructor");
+    }
+
+    public Profesor(String nombre, String apellido){
+        super(nombre, apellido);
+    }
+
+    public Profesor(String nombre, String apellido, String asignatura){
+        this(nombre, apellido);
+        this.asignatura = asignatura;
+    }
+
+
+
     public String getAsignatura() {
         return asignatura;
     }
