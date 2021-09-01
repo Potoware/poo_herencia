@@ -48,6 +48,6 @@ public class AlumnoInternacional extends Alumno{
     public String toString() {
         return super.toString() +
                 "\npais='" + pais + '\'' +
-                ", notaIdiomas=" + notaIdiomas;
+                ", notaIdiomas=" + notaIdiomas ;
     }
 }

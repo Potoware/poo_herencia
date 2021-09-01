@@ -26,6 +26,7 @@ public class EjemploHerenciaToString {
         alumnoInternacional.setNotaHistoria(5.4);
         alumnoInternacional.setEmail("apotosimo@uninpahu.edu.co");
 
+
         System.out.println("==========PROFESOR==============");
         Profesor profesor = new Profesor("Juan", "Castro", "Español");
         profesor.setEmail("Profesor@sena.edu.co");
