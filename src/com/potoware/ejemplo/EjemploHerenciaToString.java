@@ -5,7 +5,8 @@ import com.potoware.pooherencia.AlumnoInternacional;
 import com.potoware.pooherencia.Persona;
 import com.potoware.pooherencia.Profesor;
 
-public class EjemploHerenciaConstructores {
+
+public class EjemploHerenciaToString {
     public static void main(String[] args) {
         Persona persona = new Persona();
         System.out.println("==========ALUMNO==============");
@@ -37,9 +38,18 @@ public class EjemploHerenciaConstructores {
         profesor.saludar();
         System.out.println("=============================================");
         //System.out.println("Promedio " +((AlumnoInternacional)persona).calcularPromedio());
-
+        imprimir(alumno);
+        System.out.println("=============================================");
+        imprimir(alumnoInternacional);
+        System.out.println("=============================================");
+        imprimir(profesor);
     }
-
-
+    public static void imprimir(Persona persona){
+        System.out.println(persona);
+    }
 }
+
+
+
+
 

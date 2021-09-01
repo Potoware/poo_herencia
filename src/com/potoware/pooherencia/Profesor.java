@@ -30,4 +30,11 @@ public class Profesor extends Persona{
     public String saludar() {
         return "Hola, soy un master gg, soy " +getNombre()+" dicto "+getAsignatura();
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nasignatura='" + asignatura + '\'' +
+                '}';
+    }
 }
