@@ -7,7 +7,7 @@ import com.potoware.pooherencia.Profesor;
 
 public class EjemploHerenciaConstructores {
     public static void main(String[] args) {
-
+        Persona persona = new Persona();
         System.out.println("==========ALUMNO==============");
         Alumno alumno = new Alumno("Andres", "Garzon", 41, "Uninpahu");
         alumno.setNotaEspaniol(5.5);
@@ -33,6 +33,13 @@ public class EjemploHerenciaConstructores {
         System.out.println(imprimir(alumno));
         System.out.println(imprimir(alumnoInternacional));
         System.out.println(imprimir(profesor));
+        System.out.println("================SOBREESCRITURA=============================");
+        System.out.println(persona.saludar());
+        alumno.saludar();
+        alumnoInternacional.saludar();
+        profesor.saludar();
+        System.out.println("=============================================");
+        //System.out.println("Promedio " +((AlumnoInternacional)persona).calcularPromedio());
 
     }
 

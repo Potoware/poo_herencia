@@ -63,4 +63,13 @@ public class Alumno extends Persona{
     public void setNotaHistoria(double notaHistoria) {
         this.notaHistoria = notaHistoria;
     }
+
+    @Override
+    public String saludar() {
+        return super.saludar()+" soy un alumno y mi nombre es ";
+    }
+
+    public double calcularPromedio(){
+        return (notaMatematicas + notaHistoria +notaEspaniol)/3;
+    }
 }
